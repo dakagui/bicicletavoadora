@@ -1,5 +1,5 @@
 # bicletavoadora
 ## Autores
 + Vinicius
-+ Caio
++ Caio Kenji
 + Dani
