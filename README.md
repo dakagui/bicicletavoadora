@@ -11,9 +11,17 @@ Para contribuir adicione links na parte [Mais links para aprender](#mais-links-p
 + Como escrever markdown
   + Este documento usa o formato [markdown](https://www.markdowntutorial.com/)
 + Como utilizar o git
-  + Configuração do ssh 
+  + [Configuração do ssh](https://docs.microsoft.com/en-us/azure/devops/repos/git/use-ssh-keys-to-authenticate?view=azure-devops)
   + Primeiro commit
+    + Execute os comando abaixo 
+        ```bash
+            git clone git@github.com:dakagui/bicicletavoadora.git
+            git commit -am "Meu primeiro commit"
+            git push
+        ``` 
   + Fazer pull e push
+    + Faça pull para pegar as últimas atualizações
+    + Faça push para enviar as suas atualizações para o repositório remoto
 + Como utilizar docker
 
 ## Linguagem e Ferramentas
