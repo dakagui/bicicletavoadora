@@ -31,12 +31,30 @@ Para contribuir adicione links na parte [Mais links para aprender](#mais-links-p
 + Github Actions
 
 + Backend - API
-  + [Python 3.6+](https://python.land/python-tutorial)
-    + [FastAPI](https://fastapi.tiangolo.com/)
+  + Python 3.10.1+
 
 + Frontend
   + [Svelte](https://svelte.dev/tutorial/basics)
     + [SvelteKit](https://kit.svelte.dev/)
+
+## Como rodar o backend
+  Execute o [setup](./backend/README.md)
+
+## Como rodar o frontend
+  Execute o [setup](./frontend/README.md)  
+
+## Como rodar local
+Execute o comando abaixo:
+  ```bash
+    # iniciar
+    make start
+  ```
+Acesse http://localhost:8080
+
+  ```bash
+    # parar 
+    make stop 
+  ```
 
 ## Mais links para aprender
 
