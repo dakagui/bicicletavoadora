@@ -1,13 +1,7 @@
 SHELL := /bin/bash
 
-init:
-	@cd backend
-	@poetry config virtualenvs.in-project true --local
-	@poetry install
-
-
 start:
-	@docker-compose up --detach --renew-anon-volumes
+	@docker-compose up --detach --renew-anon-volumes --build
 
 stop:
 	@docker-compose down	

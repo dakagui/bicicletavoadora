@@ -49,7 +49,9 @@ Execute o comando abaixo:
     # iniciar
     make start
   ```
-Acesse http://localhost:8080
+Acesse backend [http://localhost:8080 ](http://localhost:8080)
+
+Acesse frontend [http://localhost:3000](http://localhost:3000)
 
   ```bash
     # parar 
