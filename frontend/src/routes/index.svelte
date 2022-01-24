@@ -1,2 +1,15 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+    import { onMount} from 'svelte';
+    import {getHello} from "../services/bicicletavoadora"
+
+    let bicicletaVoadaraHello = {};
+
+    onMount(async () => {
+        const res = await getHello();
+        bicicletaVoadaraHello = res;
+
+    })
+</script>
+<main>
+    <h1>{bicicletaVoadaraHello.message}</h1>
+</main>
