@@ -28,3 +28,7 @@
 Execute o comando abaixo:
 
       make start
+
+## Como contribuir
+
+* Sempre adicionar testes e rodar `make test`

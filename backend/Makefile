@@ -6,3 +6,6 @@ init:
 
 start:
 	@uvicorn --app-dir app main:app --reload
+
+test:
+	@poetry run pytest

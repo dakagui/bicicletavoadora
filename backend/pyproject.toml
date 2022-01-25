@@ -8,6 +8,8 @@ authors = ["Your Name <you@example.com>"]
 python = "^3.10"
 uvicorn = "^0.16.0"
 fastapi = "^0.71.0"
+pytest = "^6.2.5"
+requests = "^2.27.1"
 
 [tool.poetry.dev-dependencies]
 
