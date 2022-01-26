@@ -5,3 +5,6 @@ init:
 
 start:
 	@npm run dev -- --open
+
+test:
+	@npm test
