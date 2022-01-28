@@ -1,15 +1,17 @@
 <script>
-    import { onMount} from 'svelte';
-    import {getHello} from "../services/bicicletavoadora"
+    import { fetch as fetchHello, bicicletaVoadaraHello } from "../stores/bicicletavoadora";
 
-    let bicicletaVoadaraHello = {};
+    let hello = callHello();
 
-    onMount(async () => {
-        const res = await getHello();
-        bicicletaVoadaraHello = res;
-
-    })
+    async function callHello() {
+        await fetchHello()
+		return $bicicletaVoadaraHello;
+    }
 </script>
 <main>
-    <h1>{bicicletaVoadaraHello.message}</h1>
+    {#await hello}
+        <h1>Waiting for hello ...</h1>
+    {:then msg}
+        <h1>{msg}</h1>
+    {/await}
 </main>
