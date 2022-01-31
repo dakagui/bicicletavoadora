@@ -1,5 +1,8 @@
 <script>
     import { fetch as fetchHello, bicicletaVoadaraHello } from "../stores/bicicletavoadora";
+    import Monitoring  from "../middleware/monitoring";
+    
+    Monitoring.captureMessage('Hello, world!');
 
     let hello = callHello();
 
